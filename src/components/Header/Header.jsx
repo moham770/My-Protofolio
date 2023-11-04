@@ -54,12 +54,12 @@ const Header = () => {
           <MdMenu />
         </button>
         <div />
-        <ul className="sm:flex hidden gap-8 tracking-[1px] bg-[#fdfdfd] dark:shadow-lg shadow-md dark:bg-navbgDark px-[1rem] py-[0.7rem] rounded-[50px]">
+        <ul className="sm:flex hidden gap-8 tracking-[1px]  bg-[#fdfdfd] dark:shadow-lg shadow-md dark:bg-navbgDark px-[1rem] py-[0.7rem] rounded-[50px]">
           {headerLinks.map((link, i) => {
             return (
               <li key={i}>
                 <a
-                  className="hover:text-blueDark transition-colors duration-200 opacity-90"
+                  className="hover:text-blueDark   hover:tracking-[2px] hoverTransition opacity-90"
                   href="#">
                   {link.link}
                 </a>
@@ -92,7 +92,7 @@ const Header = () => {
         <div
           ref={layer}
           className="fixed inset-0 bg-layoutNavDark z-10 backdrop-blur">
-          <div className="w-[80%] mt-8 animate-scaleForNav rounded-2xl mx-auto px-[2rem] py-[1rem] bg-containerColorLight dark:bg-containerColorDark">
+          <div className="w-[80%]  mt-8 animate-scaleForNav rounded-2xl mx-auto px-[2rem] py-[1rem] bg-containerColorLight dark:bg-containerColorDark">
             <ul>
               <li className="ms-auto text-right">
                 <button
@@ -103,7 +103,7 @@ const Header = () => {
                 </button>
               </li>
               {headerLinks.map((link,i)=><li key={i} className="border-b-secondaryBorder border-b-2 pb-[1.1rem] pt-[0.5rem]">
-                <a className="hover:text-blueDark  transition-colors duration-200 opacity-90 " href="#"> {link.link}</a>
+                <a className="hover:text-blueDark    opacity-90  hover:tracking-[1px] hoverTransition" href="#"> {link.link}</a>
               </li>
               )}
             </ul>
